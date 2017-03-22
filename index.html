@@ -14,6 +14,10 @@
       color: white;
     
     } 
+    .myContainer {
+      margin: 0 auto;
+      width: 800px;
+    }
     nav { 
       background-color: #63a4f1;
       height: 50px;
@@ -54,9 +58,17 @@
 </head>
   <body>
    <!-- Write your header here -->
-   <header ><h1>my header</h1></header>
+   <header >
+      <div class="myContainer">
+       <h1>my header</h1>
+      </div>
+    </header>
    <!-- Write your nav here -->
-    <nav >my nav</nav>
+    <nav >
+      <div class="myContainer">
+      my nav
+      </div>
+    </nav>
     <aside >my aside </aside>
     <section >my section 
       <article >myarticle1 </article>
@@ -65,7 +77,9 @@
       <article >myarticle4 </article>
     </section>
     
-     <footer> my footer 
+     <footer>
+       <div class="myContainer">
+       my footer 
       <img src="MyQrCode.jpg" style="height: 120px;padding: 10px;">
       <div id="myAddress">
         <p>更新日期：2017年03月16日</p>
