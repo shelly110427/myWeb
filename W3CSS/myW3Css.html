@@ -42,6 +42,39 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";  
 }
+     </script>
+  <h2>HTML slides</h2>
+  <div class="w3-content" style="max-width:400px;">
+    <div class="myAutoSlides w3-container w3-red">
+      <h1>1</h1>
+      <p>w3-container</p>
+      <p>w3-red</p>
+    </div>
+    <img class="myAutoSlides" src="Loki.jpg" />
+    <div class="myAutoSlides w3-container w3-blue w3-xlarge w3-card-4">
+      <p>3</p>
+      <p>w3-container</p>
+      <p>w3-blue</p>
+      <p>w3-xlarge</p>
+      <p>w3-card-4</p>
+    </div>
+    <img class="myAutoSlides" src="Loki1.jpg" />
+  </div>
+  <script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("myAutoSlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 2000); 
+}
 </script>
   <div class="w3-container w3-lime">
     <h1>my Slideshow footer</h1>
